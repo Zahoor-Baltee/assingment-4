@@ -220,3 +220,222 @@
 // calcCircumfren(50);
 // calcArea(30);
 
+
+//-----------------------------------------------------------------------------------
+
+//-------CHAPTER # 38-42--------
+
+//-------QUESTION # 1----------
+
+// function power(a,b){
+    //     let x = Math.pow(a,b)
+    //     return x;
+    // }
+    // let a = +prompt("Enter a value");
+    // let b = +prompt("Enter b value");
+    // let y = power(a, b);
+// console.log(y);
+
+
+
+//-------QUESTION # 2----------
+
+// function yearChk(year){
+//  if (year % 4 ==0){
+//      console.log(year + " is a leap year");
+//  }  
+//  else{
+//      console.log(year + " is not a leap year");
+//  }
+// }
+// let year = +prompt("Enter year");
+// yearChk(year);
+
+
+
+//-------QUESTION # 3----------
+
+// function Svalue(a, b, c){
+//     s = (a+b+c)/2;
+// }
+// function areaValue(a, b, c){
+//     var area = s*(s-a)*(s-b)*(s-c);
+    
+//     console.log(area);
+// }
+// var a = +prompt("Enter the value of a")
+// var b = +prompt("Enter the value of b")
+// var c = +prompt("Enter the value of c")
+// var s;
+// Svalue(a, b, c);
+// areaValue(a, b, c);
+
+
+
+//-------QUESTION # 4----------
+
+// var a = +prompt("Enter Math marks");
+// var b = +prompt("Enter Computer marks");
+// var c = +prompt("Enter English marks");
+// var totalMarks = 300;
+// var avg;
+// var per;
+// function result(){
+//     function average(){
+//         var sum = a+b+c;
+//         avg = sum/3;
+//         return avg;
+//     }
+//     function percentage(){
+//         per = (a+b+c)/totalMarks*100;
+//         return per;
+//     }
+//     average();
+//     percentage();
+//     console.log({avg,per});
+// }
+// result();
+
+
+
+//-------QUESTION # 5----------
+
+// function myIndexOf(myArray, search) {
+//     for(var i=0;i<myArray.length;i++){
+//        if(myArray[i] === search){
+//             return i;
+//         }
+//     }
+//     return -1;
+// }
+
+// var myArray = ['a', 'b', 'c'];
+// console.log(myIndexOf(myArray, 'c'));
+// console.log(myIndexOf(myArray, 'f'));
+// console.log(myIndexOf(myArray, 'a'));
+
+
+
+//-------QUESTION # 6----------
+
+// function dltVowel(myArray,remove) {
+//     for(i=0;i<=myArray.lenght;i++){
+//         if(myArray[i]===remove){
+//             return i;
+//             console.log(myArray);
+//         }
+//     }
+// }
+// var myArray = "Pleases read this application and give me gratuity";
+// var remove = ['a','e','i','o','u'];
+// dltVowel(myArray,remove);
+
+
+
+// function dltVowel(){
+//     var arr = "Pleases read this application and give me gratuity";
+//     var remove = arr.replace(/[aeiou]/gi, "");
+//     console.log(remove);
+// }
+// dltVowel();
+
+
+
+//-------QUESTION # 7----------
+
+// function findOccurrences() {
+//     var str = "Pleases read this application and give me gratuity";
+//     var count = 0;
+//     let haveSeenVowel = false;
+  
+//     for (var letter of str.toLowerCase()) {
+//       switch (letter) {
+//         case 'a':
+//         case 'e':
+//         case 'i':
+//         case 'o':
+//         case 'u':
+//           {
+//             if (haveSeenVowel) {
+//               count++;
+//               haveSeenVowel = false;
+//             } else {
+//               haveSeenVowel = true;
+//             }
+//             break;
+//           }
+//         default:
+//           haveSeenVowel = false
+//       }
+//     }
+  
+//     return count
+//   }
+  
+//   console.log(findOccurrences());
+
+
+
+//-------QUESTION # 8----------
+
+// var myInput = +prompt("Enter distance in KM ");
+// function myMeters(){  
+//   var a = myInput*1000;
+//   console.log(a + " meters");
+// }
+// myMeters();
+
+// function myfeet(){  
+//   var a = myInput*3280.84;
+//   console.log(a + " feets");
+// }
+// myfeet();
+
+// function myInch(){  
+//   var a = myInput*39370.1;
+//   console.log(a + " Inches");
+// }
+// myInch();
+
+// function myCentimeter(){  
+//   var a = myInput*100000;
+//   console.log(a + " Centimeters");
+// }
+// myCentimeter();
+
+
+
+//-------QUESTION # 9----------
+
+// function overTime(){
+//   if(workingHours>40){
+//     var overtime = workingHours - 40;
+//     var amount = overtime * 12.00;
+//     console.log("Your overtime pay is "+amount);
+//   }
+//   else{
+//     console.log("You have to work for more than 40 hours to get over time pay")
+//   }
+// }
+// var workingHours = +prompt("Enter your working hours")
+// overTime();
+
+
+
+//-------QUESTION # 10----------
+
+// function denomination(){
+//   var h = amount/100;
+//   var f = (amount%100)/50;
+//   var t = ((amount%100)%50)/10;
+//   var r = (((amount%100)%50)%10);
+//   console.log(parseInt(h + " hundreds notes"));
+//   console.log(parseInt(f + " fifty notes"));
+//   console.log(parseInt(t + " ten notes"));
+//   console.log(parseInt(r + " remaining notes"));
+// }
+// var amount = +prompt("Enter your amount ");
+// denomination();
+
+
+// -----------------------------------------------------------------------------------
